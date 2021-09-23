@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf">
+        <title>Week 4 Forms</title>
+    </head>
+    <body>
+        <!-- form tag tells user where form starts a nd ends POST means data in form is submit on the back end
+         -->
+        <form action="mailto:rhabteye@syr.edu" method="POST">
+
+            <!-- input is for short text the value of the for attribute in label must match the value of the id attribute inuput -->
+            <label form="fullname">Full Name: <L/label>
+            <input type="text" id="fullname" name="fullname">
+            <br> <br>
+
+            <!-- textarea is for looks of writing -->
+            <label for="complaints">Complaints: </label>
+            <textarea id="complaints" name="complaints">Write your complaints here</textarea>
+            <br>
+
+            <p>How angry are you?</p>
+            <input type="radio" id="level1" name="level" value="very angry">
+            <label for="level1">Very angry</label>
+            <input type="radio" id="level2" name="level" value="not very angry">
+            <label for="level2">Not very angry</label>
+            <input type="submit" value="Send My Complaint">
+            <br>
+            <label for="contact">Method of Contact</label>
+            <select id="contact" name="contact">
+                <option value="email">Email</option>
+                <option value="email">Phone</option>
+                <option value="email">Face Time</option>
+            </select>
+            <br>
+            <label for="afterbuisnesshrs">Call after 5 PM?</label>
+            <input type="checkbox" id="afterbuisnesshrs" name="after5pm" value="yes">
+
+        </form> 
+    </body>
+</html>
