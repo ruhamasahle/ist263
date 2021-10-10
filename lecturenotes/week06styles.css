@@ -1,0 +1,19 @@
+body{color: paleturquoise;}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+     color: palevioletred;
+     font-size: 150%;
+     /* We are selecting all paragrpahs, chaing font, color and css */
+    }
+h1 {
+    color: peru;
+    letter-spacing: 1.4em;
+    word-spacing: 2rem;
+    /* You can lookup all the different text effects in w3schools. */
+}  
+p, h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p a {    color: orange
+    
+}
