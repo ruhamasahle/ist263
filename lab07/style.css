@@ -1,0 +1,28 @@
+img {
+  justify-items: center;  
+}
+nav {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #f582ae;
+    background-color: #001858;
+}
+
+nav a:hover {
+    background-color: #f3d2c1;
+}
+
+body{
+    background-color: #fef6e4;
+}
+
+h1, h2 {
+    color: #8bd3dd;
+}
+
+p, dd {
+    color: #172c66;
+}
