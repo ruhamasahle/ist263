@@ -6,8 +6,12 @@ nav {
     margin-bottom: 30px;
 }
 
-dd a {
-    background-color: rosybrown;
+dt {
+    color: rosybrown;
+}
+
+dd a{
+    color: rgb(119, 76, 76);
 }
 nav a {
     color: #f582ae;
