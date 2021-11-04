@@ -1,0 +1,63 @@
+
+nav{
+    background-color: rosybrown;
+    
+}
+@media only screen and (max-width: 700px) {
+    a  {
+        display: block;
+        width: 100%;
+    }
+    span{
+        display: none;
+    }
+}
+.quote {
+    float: right;
+}
+
+.part2 {
+    display: flex;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.overall {
+    display: flex;
+    justify-content: center;
+    
+} 
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-basis: 663px;
+}
+
+.flex2
+{
+    display: flex;
+
+} 
+
+aside{
+    display:flex;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    color: white;
+    background-color: olivedrab;
+    border-radius: 10px;
+    box-sizing: 400px;
+    flex-basis: 221px;
+    padding: 20px 20px;
+}
