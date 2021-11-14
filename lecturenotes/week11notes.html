@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <style>
+        /* Skip to content is three things
+        1. html link "skip to content"
+        2. put anchor in- where it skips to
+        3. Style it: position absolute adn extreme left
+        3b. bring i t back by changing position
+        */
+       #skip {
+           position: absolute; /* the element relative to it's parent  */
+           background-color: rosybrown;
+       }
+       #skip {
+           position: absolute;
+           left: -999px;
+       }
+       #skip:focus {
+           left: 10px;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Id: You can oly have an ID of a certain place one time. -->
+        <a id='skip' href="#content">Skip to Content</a>
+        <!-- Pound sign means link is moving down the page to the ID content -->
+        <!-- tabindex is html attribute that changes the order in which items are selected as you tab through them. -->
+        <a href="index.html" tabindex="3">Home</a>
+        <a href="about.html" tabindex="1">About</a>
+        <a href="contact.html" tabindex="2">Contact</a>
+    </nav>
+
+    <p>is simply dummy text of the printing and typesetting industry.</p>
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <a id="content"></a>
+    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</body>
+</html>
+
+<!-- skip to content: 
+    - it doesn't appear on your page unless you are in need of it so how do they do that ?
+
+-->
