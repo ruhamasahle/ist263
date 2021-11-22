@@ -14,13 +14,13 @@ hr {
 p {
     display: flex;
     justify-content: center;
-    color: black;
+    color: white;
     font-size: 3em;
 }
 h1{
     display: flex;
     justify-content: center;
-    color: black;
+    color: white;
     font-size: 6em;
 }
 
