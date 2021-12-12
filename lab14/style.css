@@ -1,0 +1,102 @@
+img {
+    justify-items: center;  
+  }
+  nav {
+      padding: 10px;
+      margin-bottom: 30px;
+  }
+  
+  dt {
+      color: rosybrown;
+  }
+  
+  dd a{
+      color: rgb(119, 76, 76);
+  }
+  nav a {
+      color: #f582ae;
+      background-color: #001858;
+  }
+  
+  nav a:hover {
+      background-color: #f3d2c1;
+  }
+  
+  body{
+      background-color: #fef6e4;
+  }
+  
+  h1, h2 {
+      color: #8bd3dd;
+  }
+  
+  p, dd {
+      color: #172c66;
+  }
+
+
+nav{
+    background-color: rosybrown;
+    
+}
+@media only screen and (max-width: 700px) {
+    a  {
+        display: block;
+        width: 100%;
+    }
+    span{
+        display: none;
+    }
+}
+.quote {
+    float: right;
+}
+
+.part2 {
+    display: flex;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.overall {
+    display: flex;
+    justify-content: center;
+    
+} 
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-basis: 663px;
+}
+
+.flex2
+{
+    display: flex;
+
+} 
+h1, h2{
+    font-family: 'Architects Daughter', cursive;
+}
+
+aside{
+    display:flex;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    color: white;
+    background-color: olivedrab;
+    border-radius: 10px;
+    box-sizing: 400px;
+    flex-basis: 221px;
+    padding: 20px 20px;
+}

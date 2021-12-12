@@ -67,13 +67,13 @@ div a, nav a{
     padding-bottom: 4px;
     text-align: center;
 }
-
+/* 5 flex or margin on footer */
 footer{
 display: flex;
 padding: 0;
 min-height: 50vh;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 margin-top: auto;
 margin-bottom: 0em;
 }
@@ -110,3 +110,4 @@ body {
           background-position: 0% 50%;
       }
   }
+  
