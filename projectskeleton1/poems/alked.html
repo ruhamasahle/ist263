@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    
+    <style>
+        iframe {
+            display: flex;
+            justify-self: center;
+        }
+    </style>
+    <section>
+        <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <defs>
+                <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                    <feGaussianBlur stdDeviation="163" result="effect1_foregroundBlur"></feGaussianBlur>
+                </filter>
+            </defs>
+            <g filter="url(#blur1)" id="circle1">
+                <circle cx="403" cy="285" fill="#001a33" r="363"></circle>
+                <circle cx="956" cy="266" fill="#000" r="363"></circle>
+                <circle cx="75" cy="446" fill="#001a33" r="363"></circle>
+                <circle cx="174" cy="286" fill="#001a33" r="363"></circle>
+                <circle cx="895" cy="511" fill="#000" r="363"></circle>
+                <circle cx="735" cy="86" fill="#001a33" r="363"></circle>
+            </g>
+            <g filter="url(#blur1)" id="circle2">
+                <circle cx="403" cy="285" fill="#001a33" r="363"></circle>
+                <circle cx="956" cy="266" fill="#000" r="363"></circle>
+                <circle cx="75" cy="446" fill="#001a33" r="363"></circle>
+                <circle cx="174" cy="286" fill="#001a33" r="363"></circle>
+                <circle cx="895" cy="511" fill="#000" r="363"></circle>
+                <circle cx="735" cy="86" fill="#001a33" r="363"></circle>
+            </g>
+        </svg>
+        <script>
+            const tween= Kute.fromTo(
+            '#circle1',
+                {g: '#circle1'},
+                {g:'#circle2'},
+                {repeat: 999, duration: 3000, yoyo:true}
+            )
+            tween.start()
+        </script>
+    </section>
+</head>
+<nav>
+    <img src="/projectskeleton/logos/hak.jpeg" alt="black background white text in amharic" height="200" width="200">
+    <br>
+    <a href="../index.html">Back</a>
+    <a href="../about.html">About</a>
+</nav>
+
+<body>
+
+    <div style="padding:73.57% 0 0 0;position:relative;">
+        <iframe
+            src="https://player.vimeo.com/video/628454846?h=3d4bd43273&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+            style="position:absolute;top:0;left:0;width:35%;height:35%;" title="Alkedmim Final"></iframe>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+body{
+     position: relative;
+}
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+/* .display
+.container section .section-1{
+    z-index: 30;
+    left: 0;
+}
+.container section .section-2{
+    z-index: 20;
+    left: 0;
+}
+.container section .section-3{
+    z-index: 10;
+    left: 0;
+} */
+
+.active {
+    border-bottom: 2px solid green
+}
+
+.container section {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    /* left: 0; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow-x: scroll; */
+
+}
+
+.content {
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    /* border-right: 2px solid green; */
+}
+
+#one{
+    background-image: url('/bg/moon.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#two{
+    background-image: url('/bg/mountain.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#three{
+    background-image: url('/bg/field.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    overflow: hidden;
+    padding: 30px;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+    width: 100%;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+nav ul li {
+    list-style: none;
+    justify-content: center;
+    /* margin: 0% 10px; */
+    /* display: inline-block; */
+    /* display: flex;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* padding: 5px; */
+    /* text-align: center; */
+}
+
+nav ul li a{
+    padding: 6px 15px;
+    background-color: rgb(71, 255, 215);
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 8px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background:violet ;
+    color: pink;
+}
+
+/* link color clicked */
+nav ul li a link:hover {
+    color: yellow;
+}
+.container section h1 {
+    display: flex;
+    bottom: 50%;
+    size: 5rem;
+    color: wheat;
+    align-self: center;
+}
+#footer{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 5%;
+    color: wheat;
+    text-decoration: underline 1px gold ;
+
+}
+
+
+#links {
+    display: flex;
+    bottom: 10%;
+    right: 5%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    z-index: 100;
+    /* transform: translate(10px); */
+    /* border: white solid;
+    border-radius: 5px 10px;
+    border-spacing: 20px; */
+    
+}
+
+/* iframe */
+
+.iframe-bg{
+    background-color: peru;
+    border: 2rem 2rem palegreen;
+    /* border-radius: 1rem; */
+    
+}
+
+/* Modal */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    background-color: rgb(0,0,0,0.2);
+}
+#myBtn{
+    position: fixed;
+    bottom:50%;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .close {
+    color: #aaa;
+    float: center;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#one h1 {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    font-size: 3rem;
+}
+
+
+.container section .center {
+    width: 100%;
+    height: 50%; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}  
+
+p {
+    width: 30%;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.char {
+    font-size: 40px;
+    height: 40px;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+}
+
+.body-text {
+    width: 100%;
+    height: 50%; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-style: italic;
+    color: wheat;
+    /* bottom: 1rem; */
+    /* size: 0.5rem; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes an {
+    from {
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        transform: none !important;
+    }
+    iframe{
+        position: absolute;
+    }
+
+    #links{
+        position: absolute;
+    }
+}
+
+/* Birds from CodePen: https://codepen.io/matchboxhero/pen/RLebOY */
+.container #two .bird {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    will-change: background-position;
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+  }
+.container #two .bird--one {
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+  }
+  .container #two  .bird--two {
+    animation-duration: 0.9s;
+    animation-delay: -0.75s;
+  }
+  .bird--three {
+    animation-duration: 1.25s;
+    animation-delay: -0.25s;
+  }
+  .bird--four {
+    animation-duration: 1.1s;
+    animation-delay: -0.5s;
+  }
+  .bird-container {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    transform: scale(0) translateX(-10vw);
+    will-change: transform;
+    animation-name: fly-right-one;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .bird-container --one {
+    animation-duration: 15s;
+    animation-delay: 0;
+  }
+  .bird-container--two {
+    animation-duration: 16s;
+    animation-delay: 1s;
+  }
+  .bird-container--three {
+    animation-duration: 14.6s;
+    animation-delay: 9.5s;
+  }
+  .bird-container--four {
+    animation-duration: 16s;
+    animation-delay: 10.25s;
+  }
+  @keyframes fly-cycle {
+    100% {
+      background-position: -900px 0;
+    }
+  }
+  @keyframes fly-right-one {
+    0% {
+      transform: scale(0.3) translateX(-10vw);
+    }
+    10% {
+      transform: translateY(2vh) translateX(10vw) scale(0.4);
+    }
+    20% {
+      transform: translateY(0vh) translateX(30vw) scale(0.5);
+    }
+    30% {
+      transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+    40% {
+      transform: translateY(2vh) translateX(70vw) scale(0.6);
+    }
+    50% {
+      transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+    60% {
+      transform: translateY(0vh) translateX(109vw) scale(0.6);
+    }
+    100% {
+      transform: translateY(0vh) translateX(200vw) scale(0.6);
+    }
+  }
+  @keyframes fly-right-two {
+    0% {
+      transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+    }
+    10% {
+      transform: translateY(0vh) translateX(10vw) scale(0.4);
+    }
+    20% {
+      transform: translateY(-4vh) translateX(30vw) scale(0.6);
+    }
+    30% {
+      transform: translateY(1vh) translateX(50vw) scale(0.45);
+    }
+    40% {
+      transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+    }
+    50% {
+      transform: translateY(0vh) translateX(90vw) scale(0.45);
+    }
+    51% {
+      transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+    100% {
+      transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+  }
